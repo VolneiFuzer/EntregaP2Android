@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="16dp"
+    android:background="#B0C4DE"
+    tools:context="com.apprizme.apprizme.SignUpActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/apprizme_v2"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/logo"
+        android:layout_marginBottom="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerInParent="true"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_nome"
+            android:id="@+id/nome"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/campo_nome"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textStyle="bold"
+            android:text="@string/label_email"
+            android:id="@+id/email"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/campo_email"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/linearLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textStyle="bold"
+            android:text="@string/label_senha"
+            android:id="@+id/senha"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/campo_senha"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout5"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/linearLayout4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textStyle="bold"
+            android:text="@string/label_conf_Senha"
+            android:id="@+id/conf_senha"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/campo_confSenha"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout6"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearLayout5">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_buttom_entrar"
+            android:onClick="cadastraUsusario"
+            android:id="@+id/BtLoginSignUp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/background_light"
+            android:ellipsize="start"
+            style="@style/Widget.AppCompat.Button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/linearLayout6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Você já tem cadastro? Então clique aqui!"
+            android:id="@+id/text_new_cadastro"
+            android:onClick="true"
+            android:textStyle="italic"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

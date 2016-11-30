@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_todosapprizs_layout"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Todos os Apprizs" />
+        <item
+            android:id="@+id/nav_apprizssi_layout"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Sistemas de informação" />
+        <item
+            android:id="@+id/nav_apprizsandroid_layout"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Cadeira Android" />
+        <item
+            android:id="@+id/nav_configperfil_layout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Configuração do perfil" />
+        <item
+            android:id="@+id/nav_criacaodegrupo_layout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Criacao de grupo" />
+        <item
+            android:id="@+id/nav_pesquisadegrupo_layout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Pesquisa de grupos" />
+
+    </group>
+
+</menu>
